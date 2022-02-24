@@ -31,7 +31,7 @@ def print_all_sub(root, graph):
         graph.subgraph(new_graph)
 
 def get_root_node():
-    filenames = ["dff_async_reset.v"]
+    filenames = ["example.sv"]
     include_dirs = []
     c = HdlConvertor()
     return c.parse(filenames, Language.SYSTEM_VERILOG, include_dirs, hierarchyOnly=False, debug=True)
